@@ -1,12 +1,7 @@
-#Duplicate code example
-def calculate(length, width, height):
-    area = length * width
-    perimeter = 2 * (length + width)
-    volume = length * width * height
-    surface_area = 2 * (length * width + length * height + width * height)
-    return area, perimeter, volume, surface_area
+from Duplicate_code_example import calculate_area, calculate_perimeter
 
 # Duplicate code: calculate_area and calculate_perimeter functions have similar calculations.
 def calculate_area_perimeter(length, width):
-    area, perimeter = calculate(length, width, 0)
+    area = calculate_area(length, width)
+    perimeter = calculate_perimeter(length, width)
     return area, perimeter
